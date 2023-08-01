@@ -7,10 +7,18 @@ function solution(start, end) {
     if ((start < 0 && start > 50) && (end < 0 && end > 50)) {
         return;
     }
-    for (let i = 0; i < (end - start) + 1; i++) {
+    for (let i = 0; i <= (end - start); i++) {
         answer.push(num);
         num++;
     }
     // 리스트 반환
     return answer;
 }
+
+// 다른 풀이
+fucntion another(start, end) {
+    const answer = [];
+    for (let i = start; i <= (end - start); i++) {
+        answer.push(i);
+    }
+};
