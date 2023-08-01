@@ -16,7 +16,7 @@ function solution(start, end) {
 }
 
 // 다른 풀이
-fucntion another(start, end) {
+function another(start, end) {
     const answer = [];
     for (let i = start; i <= (end - start); i++) {
         answer.push(i);
