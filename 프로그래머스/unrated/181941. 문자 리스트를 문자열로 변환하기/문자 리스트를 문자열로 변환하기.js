@@ -5,3 +5,8 @@ function solution(arr) {
     }
     return answer;
 }
+
+// 다른 풀이
+function another(arr) {
+    return arr.join("");
+}
