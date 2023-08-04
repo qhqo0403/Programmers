@@ -27,3 +27,5 @@ rl.on('line', function (line) {
       }
     console.log(word.join(''));
 });
+
+// 문자열 더하기로도 접근해볼 수 있음!
