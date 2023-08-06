@@ -7,3 +7,8 @@ function solution(a, b) {
     
     return Math.max(Number(first), Number(second));
 }
+
+// 다른 풀이
+function another(a, b) {
+    return Math.max(Number(`${a}${b}`), Number(`${b}${a}`));
+}
