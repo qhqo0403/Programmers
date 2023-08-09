@@ -37,4 +37,20 @@ function solution(code) {
     return answer || 'EMPTY';
 }
 
-// 아직도 문제가 살짝 이해가 안감 .....
+// 다른 풀이
+function another01(code) {
+   let answer = '';
+    let mode = 0;
+
+    for (let i = 0; i < code.length; i += 1) {
+      if (Number(code[i]) === 1) {
+        mode = mode === 1 ? 0 : 1;
+      }
+      if (Number(code[i]) !== 1 && i % 2 === mode) { // 홀짝 구분을 변수로 접근. 이 경우 생각하기
+        answer += code[i];
+      }
+    }
+    return answer.length > 0 ? answer : 'EMPTY';
+}
+
+// 아니면 1을 제외시키는 방식으로 continue 로 건너뛰는 방식도 있었음!
