@@ -9,6 +9,14 @@ function solution(num_list) {
       even.push(num_list[i])
     }
   }
+/* 인덱스를 활용한 작업이 아니어서 for - of 생각! 
+  for (let num of num_list) {
+    if (num % 2 === 0) {
+      odd.push(num);
+    } else {
+      even.push(num)
+    }
+  } */
   
   return Number(odd.join('')) + Number(even.join(''));
 }
