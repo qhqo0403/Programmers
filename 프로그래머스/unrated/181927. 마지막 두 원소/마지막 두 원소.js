@@ -10,3 +10,9 @@ function solution(num_list) {
     
     return num_list;
 }
+
+// 다른 풀이
+function another(num_list) {
+    const [a, b] = [...num_list].reverse();
+    return [...num_list, a > b ? (a-b):a*2];
+}
