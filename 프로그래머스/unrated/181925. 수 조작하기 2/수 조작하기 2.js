@@ -1,7 +1,7 @@
 function solution(numLog) {
     let answer = '';
     
-    for (let i = 0; i < numLog.length; i++) {
+    for (let i = 0; i < numLog.length - 1; i++) {
         let value = numLog[i + 1] - numLog[i];
         if (value === 1) {
             answer += 'w'
