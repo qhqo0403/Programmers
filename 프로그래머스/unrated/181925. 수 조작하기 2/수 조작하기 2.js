@@ -3,14 +3,19 @@ function solution(numLog) {
     
     for (let i = 0; i < numLog.length - 1; i++) {
         let value = numLog[i + 1] - numLog[i];
-        if (value === 1) {
-            answer += 'w'
-        } else if (value === -1) {
-            answer += 's'
-        } else if (value === 10) {
-            answer += 'd'
-        } else if (value === -10) {
-            answer += 'a'
+        switch(value) {
+            case 1 : 
+                answer += 'w';
+                break;
+            case -1 : 
+                answer += 's';
+                break;
+            case 10 : 
+                answer += 'd';
+                break;
+            case -10 : 
+                answer += 'a';
+                break;
         }
     }
     
