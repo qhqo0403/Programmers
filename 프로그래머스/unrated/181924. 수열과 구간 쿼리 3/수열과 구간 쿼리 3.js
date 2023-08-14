@@ -9,3 +9,12 @@ function solution(arr, queries) {
     
     return arr;
 }
+
+// 다른 풀이
+function another(arr, queries) {
+    queries.forEach( ([a,b]) => {
+        [arr[a],arr[b]] = [arr[b],arr[a]];
+    })
+    return arr;
+}
+// 분해할당
