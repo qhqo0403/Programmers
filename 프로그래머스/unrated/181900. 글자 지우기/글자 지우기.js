@@ -7,3 +7,16 @@ function solution(my_string, indices) {
     
     return str.join('');
 }
+
+// 다른 풀이
+function another(m, a) {
+    var answer = '';
+
+    for(let i = 0; i<m.length; i++){
+        if(!a.includes(i)){
+            answer += m[i]
+        }
+    }
+
+    return answer;
+}
