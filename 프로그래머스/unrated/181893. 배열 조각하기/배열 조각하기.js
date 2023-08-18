@@ -23,8 +23,8 @@ function another(arr, query) {
             start += query[i];
         }
     }
-    return arr.slice(start, end).length ?
-        arr.slice(start, end) : [-1]
+    return arr.slice(start, end + 1).length ?
+        arr.slice(start, end + 1) : [-1]
 }
 
 // 2개의 포인터
