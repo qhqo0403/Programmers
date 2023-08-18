@@ -3,8 +3,7 @@ function solution(arr, idx) {
     for (let i = idx; i < arr.length; i++) {
         if (arr[i] === 1) {
             return answer = i;
-        };
-        if (arr[i] !== 1) {
+        } else {
             answer = -1;
         }
     }
