@@ -8,3 +8,12 @@ function solution(n) {
         }
     }
 }
+
+// 다른 풀이
+function another(n, x = 1) {    
+    while (x++) { // while문에서 증감연산자 사용
+        if (n % x === 1) {
+            return x;
+        }
+    }    
+}
