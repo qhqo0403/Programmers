@@ -5,7 +5,7 @@ function solution(food) {
     // 앞부분 만들고 나서 뒷부분 뒤집어서 concat 하고 join
     let foodList = [];
     
-    const halfFood = food.slice(1).forEach((f, idx) => {
+    food.slice(1).forEach((f, idx) => {
         for (let i = 1; i <= Math.floor(f / 2); i++) {
         foodList.push(idx + 1);
         }
