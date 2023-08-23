@@ -54,6 +54,6 @@ function another(s) {
 
   helper(s);
 
-  return answer;
+  return answer.length;
 }
 // 최대 2.89ms 소요!
