@@ -8,6 +8,10 @@ function solution(rny_string) {
             str[i] = 'rn';
         }
     }
-    
     return str.join('');
+}
+
+// 메서드 이용
+function another(rny_string) {
+    return rny_string.replaceAll('m', 'rn');
 }
