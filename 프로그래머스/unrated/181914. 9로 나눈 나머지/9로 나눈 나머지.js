@@ -9,3 +9,8 @@ function solution(number) {
     
     return sum % 9;
 }
+
+// 메서드 이용
+function another(number) {
+    return [...number].reduce((a, v) => a + Number(v)) % 9;
+}
