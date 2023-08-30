@@ -10,3 +10,10 @@ function solution(arr, n) {
     
     return arr;
 }
+
+// 다른풀이
+function another(arr, n) {
+    return arr.length % 2 == 0 
+        ? arr.map((e, i) => i % 2 !== 0 ? (e + n) : e)
+        : arr.map((e, i) => i % 2 === 0 ? (e + n) : e)
+}
