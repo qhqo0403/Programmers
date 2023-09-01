@@ -1,21 +1,18 @@
 function solution(players, callings) {
     const rank = {};
-    const player = {};
-  
+
     for (let i = 0; i < players.length; i++) {
-        rank[i + 1] = players[i];
-        player[players[i]] = i + 1; 
+        rank[players[i]] = i;
+    } 
+    for (let call of callings) {
+        let swapIdx = rank[call];
+
+        let temp = players[swapIdx - 1];
+        players[swapIdx - 1] = players[swapIdx];
+        players[swapIdx] = temp;
+
+        rank[players[swapIdx - 1]] = swapIdx - 1;
+        rank[players[swapIdx]] = swapIdx;
     }
-    for (let k = 0; k < callings.length; k++) {
-    let targetIdx = player[callings[k]];
-
-    let temp = rank[targetIdx - 1];
-    rank[targetIdx - 1] = rank[targetIdx];
-    rank[targetIdx] = temp;
-
-    player[rank[targetIdx]] = targetIdx;
-    player[rank[targetIdx - 1]] = targetIdx - 1;
-    }
-
-    return Object.values(rank);
+    return players;
 }
