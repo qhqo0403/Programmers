@@ -3,10 +3,8 @@ function solution(players, callings) {
     const player = {};
   
     for (let i = 0; i < players.length; i++) {
-    rank[i + 1] = players[i];
-    }
-    for (let j = 0; j < players.length; j++) {
-    player[players[j]] = j + 1;
+        rank[i + 1] = players[i];
+        player[players[i]] = i + 1; 
     }
     for (let k = 0; k < callings.length; k++) {
     let targetIdx = player[callings[k]];
