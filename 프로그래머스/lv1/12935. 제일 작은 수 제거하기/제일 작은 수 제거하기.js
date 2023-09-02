@@ -15,3 +15,10 @@ function solution(arr) {
     }
     return arr.filter((n, idx) => idx !== lowest);
 }
+
+// 다른풀이
+function another(arr) {
+    const min = Math.min(...arr);
+    return arr.length !== 1 ? arr.filter(i => i !== min) : [-1]
+}
+// 아니면 slice로 최솟값을 빼낸 다음에 return arr 하는 방법도 있음
