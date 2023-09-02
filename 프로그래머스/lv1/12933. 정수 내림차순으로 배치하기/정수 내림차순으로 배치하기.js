@@ -9,3 +9,9 @@ function solution(n) {
     
     return +answer.join('');
 }
+
+// 다른풀이
+function solution(n) {
+    const value = n.toString().split('').sort().reverse().join('');
+    return +value;
+}
