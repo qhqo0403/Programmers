@@ -24,3 +24,19 @@ public class Main {
 		System.out.println(count);
 	}
 }
+
+// Set 이용
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		HashSet<Integer> result = new HashSet<>();
+		int[] modArr = new int[10];
+		
+		for (int i = 0; i < modArr.length; i++) {
+			modArr[i] = sc.nextInt() % 42;
+			result.add(modArr[i]);
+		}
+		
+		System.out.println(result.size());
+	}
+}
