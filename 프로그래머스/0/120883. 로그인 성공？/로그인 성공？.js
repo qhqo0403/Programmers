@@ -16,14 +16,6 @@ function solution(id_pw, db) {
         if (id === tempId && pw === tempPw) {
             result = "login";
         }
-        
-        // if (id === tempId && pw === tempPw) {
-        //     result = "login";
-        // } else if (id === tempId && pw !== tempPw) {
-        //     result = "wrong pw";
-        // } else if (id !== tempId) {
-        //     result = "fail";
-        // }
     }
     
     return result;
