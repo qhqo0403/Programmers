@@ -1,15 +1,15 @@
 function solution(ingredient) {
-    const bugger = [];
+    const burger = [];
     result = 0;
     
     for (let el of ingredient) {
-        bugger.push(el);
+        burger.push(el);
         
-        if (bugger.length >= 4) {
-            const temp = bugger.slice(-4).join("");
+        if (burger.length >= 4) {
+            const temp = burger.slice(-4).join("");
             
             if (temp === "1231") {
-                bugger.splice(-4);
+                burger.splice(-4);
                 result++;
             }
             
